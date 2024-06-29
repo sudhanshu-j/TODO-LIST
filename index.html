@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favi/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favi/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favi/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favi/site.webmanifest" />
+    <link rel="mask-icon" href="/favi/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Title of the page -->
+    <title>Todo List</title>
+
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="app">
+      <!-- Greeting -->
+      <section class="greeting">
+        <img src="/logo.svg" alt="logo" class="logo" />
+        <h2 class="title">
+          Hello Mr/Mrs,
+          <input type="text" id="name" placeholder="Type Your Name" />
+        </h2>
+      </section>
+      <!-- End of Greeting -->
+
+      <!-- New Todo -->
+      <section class="create-todo">
+        <h3>CREATE A TODO LIST</h3>
+        <form id="new-todo-form">
+          <h4>What's on your todo list?</h4>
+          <input
+            type="text"
+            placeholder="e.g. Buy Some apples or Meeting At 8.00 PM"
+            name="content"
+            id="content"
+            class="text"
+          />
+
+          <h4>Choose the category</h4>
+          <div class="options">
+            <label class="label-1">
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="business"
+              />
+              <span class="bubble business"></span>
+              <div>Business</div>
+            </label>
+            <label class="label-2">
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>Personal</div>
+            </label>
+          </div>
+
+          <input type="submit" value="Add todo" class="btn" />
+        </form>
+      </section>
+      <!-- End of New Todo -->
+
+      <!-- List -->
+      <section class="todo-list">
+        <h3>TODO LIST</h3>
+        <div class="list" id="todo-list"></div>
+      </section>
+      <!-- End of List -->
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
