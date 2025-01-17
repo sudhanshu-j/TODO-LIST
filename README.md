@@ -65,7 +65,7 @@ To set up the Todo List app on your local machine, follow these steps:
 1. **Clone the repository**:
    Open your terminal and clone the repo to your local machine by running:
    ```bash
-   git clone https://github.com/your-username/todo-list.git
+   git clone https://github.com/sudhanshu-j/todo-list.git
    ```
 
 2. **Navigate to the project directory**:
